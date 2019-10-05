@@ -1,0 +1,3 @@
+/home/Sam/MyProjects/Learning-Cpp/lez_02_fromInchtoCm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/Sam/MyProjects/Learning-Cpp/lez_02_fromInchtoCm/cmake-build-debug/CMakeFiles/lez_02_fromInchtoCm.dir
+/home/Sam/MyProjects/Learning-Cpp/lez_02_fromInchtoCm/cmake-build-debug/CMakeFiles/edit_cache.dir

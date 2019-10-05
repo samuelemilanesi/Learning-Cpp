@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lez_04_structGrades.dir/main.cpp.o  -o lez_04_structGrades 
