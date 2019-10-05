@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/Sam/MyProjects/Learning-Cpp/lez_05_myFirstClass-arrayStack/Stack.h
+
+/home/Sam/MyProjects/Learning-Cpp/lez_05_myFirstClass-arrayStack/main.cpp
+iostream
+-
+Stack.h
+/home/Sam/MyProjects/Learning-Cpp/lez_05_myFirstClass-arrayStack/Stack.h
+
