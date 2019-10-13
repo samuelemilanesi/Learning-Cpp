@@ -1,3 +1,0 @@
-/home/Sam/MyProjects/Learning-Cpp/lez_01_IOstreamAndNamespaces/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/Sam/MyProjects/Learning-Cpp/lez_01_IOstreamAndNamespaces/cmake-build-debug/CMakeFiles/lez_01_IOstreamAndNamespaces.dir
-/home/Sam/MyProjects/Learning-Cpp/lez_01_IOstreamAndNamespaces/cmake-build-debug/CMakeFiles/edit_cache.dir

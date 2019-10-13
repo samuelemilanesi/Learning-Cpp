@@ -35,8 +35,9 @@ int main(){
         return 1;
     }else{
         cout<< "The solution is NOT correct"<<endl;
-        return -1;
+       
     }
+     return -1;
 
 }
 
