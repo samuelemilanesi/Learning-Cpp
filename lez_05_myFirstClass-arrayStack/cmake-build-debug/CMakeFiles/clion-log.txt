@@ -1,4 +1,4 @@
-/snap/clion/85/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/Sam/MyProjects/Learning-Cpp/lez_05_myFirstClass-arrayStack
+/snap/clion/88/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/Sam/MyProjects/Learning-Cpp/lez_05_myFirstClass-arrayStack
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/Sam/MyProjects/Learning-Cpp/lez_05_myFirstClass-arrayStack/cmake-build-debug
