@@ -1,7 +1,6 @@
-/* Takes a sudoku matrix and checks wether is a suitable solution or not */ 
+/* Takes a sudoku matrix and checks weather is a suitable solution or not */
 
 #include <iostream>
-#include <string>
 #include <cmath>
 #include <algorithm>
 using namespace std;
