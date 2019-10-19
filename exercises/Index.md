@@ -33,12 +33,13 @@ Implement a class Stack for integers with methods:
 
 # ex_04: Complex numbers
 Implement two classes:
+
     1. Class Complex: class to deal with complex numbers in algebraic form implementing the operators + - * /
 
     2. Class Complex_polar: class to deal with complex numbers in polar form implementing the operators + - * /
 
 # ex_05: Pointers code analysis 
-Analize the code contained in the file pointers.cpp
+Analyze the code contained in the file pointers.cpp
 
 # ex_06: Binary search
 Implement a function that given an ORDERD vector of strings finds a given string performing binary search. Evaluate computational complexity.
