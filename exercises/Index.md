@@ -25,11 +25,12 @@ Implement a class Stack for integers with methods:
         - addBook(const Book & b); //add a book to the library
         - rentBook; //function to rent a book passing as input a Book object
         - rentBook; // function to rent a book passing as input only author and title
-        - find; // function to find if a book exists in the library passing auth and title
-        - findAvailableBook // fun to find if a book exist and is avialable passing auth and title
+         title
         - returnBook // fun to return a rented book passing its code
         - print() // Prints the whole library
         - printOldestBook() // prints infos of the oldest book in the library
+        - find; (private) // function to find if a book exists in the library a book
+        - findAvailableBook // (private) fun to find if a book exist and is avialable passing a book
 
 # ex_04: Complex numbers
 Implement two classes:
