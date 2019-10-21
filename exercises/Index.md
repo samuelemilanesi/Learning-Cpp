@@ -33,12 +33,11 @@ Implement a class Stack for integers with methods:
         - findAvailableBook // (private) fun to find if a book exist and is avialable passing a book
 
 # ex_04: Complex numbers
-Implement two classes:
+Implementa class:
 
-    1. Class Complex: class to deal with complex numbers in algebraic form implementing the operators + - * /
+    Class Complex: class to deal with complex numbers in algebraic form implementing the operators + - * /; get phase, modulus, conjugate;
 
-    2. Class Complex_polar: class to deal with complex numbers in polar form implementing the operators + - * /
-
+ 
 # ex_05: Pointers code analysis 
 Analyze the code contained in the file pointers.cpp
 
