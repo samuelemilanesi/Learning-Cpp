@@ -57,3 +57,15 @@ Moreover, we want to provide the implementation of the following methods of the
 • `add_stock_quote`, which adds a stock quote to the archive.
 • `add_last_sale_price`, that, given a stock quote symbol and a price, appends the price
 to the vector in the archived stock quote represented by the symbol.
+
+# ex_08: Polynomial Root Finder
+Implement a library in order to find a root of a given real  polynomialfunction $f:[a,b] \to \mathbb{R}$ using three numerical methods:
+    - Bisection method
+    - Newton method 
+    - Bisection-Newton-pooled method (which uses bisection at first, and the result of bisection as input starting point for Newton's method)
+There must be 3 possible stopping condition: 
+    - MAXIT: a maximum number of iteration 
+    - RESIDUAL: absolute value of the function evaluated in the point returned by the algorithm (i.e. distance from the zero value we want to find) 
+    - BOTH
+
+
