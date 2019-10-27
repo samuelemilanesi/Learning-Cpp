@@ -44,4 +44,16 @@ Analyze the code contained in the file pointers.cpp
 # ex_06: Binary search
 Implement a function that given an ORDERD vector of strings finds a given string performing binary search. Evaluate computational complexity.
 
-
+# ex_07: Stock Prices 
+The aim of this exercise is to implement a program for the U.S. stock quotes market.
+A stock quote is characterized by its unique symbol (NASDAQ symbols are four or five
+characters in length) and the last sale price values (the price at which a stock last traded
+during regular market hours), quoted in U.S. dollars and cents.
+We need to define two classes, namely `Stock_quote` and `Stock_quote_archive`.
+In particular, the `Stock_quote`objects keep track of the price history in a `std::vector`, whilst
+the `Stock_quote_archive` class stores stock quotes data in another `std::vector`.
+Moreover, we want to provide the implementation of the following methods of the
+`Stock_quote_archive` class:
+• `add_stock_quote`, which adds a stock quote to the archive.
+• `add_last_sale_price`, that, given a stock quote symbol and a price, appends the price
+to the vector in the archived stock quote represented by the symbol.
