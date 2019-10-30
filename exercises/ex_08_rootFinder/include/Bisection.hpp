@@ -1,29 +1,14 @@
 #pragma once
-#include <Function.hpp>
+#include "Root_Finder.hpp"
 
-class Bisection {
-private:
-    real x;
-    real a;
-    real b;
-    real tol;
-    unsigned long num_iter=0;
-    unsigned long max_iter;
-    enum mtd {TOL, MAXIT, BOTH} M; 
-    const Function& f;
-// subroutines
-    bool converged(real tol, unsigned max_iter, mtd& M) const;
+class Bisection: public Root_Finder {
 
 public:
-    Bisection(const Function& , real x0, real tol, unsigned max_iter);
-    Bisection(const Function&, real x0, real tol);
-    Bisection(unsigned max_iter, const Function&, real x0);
-
-// getter 
-    real get_zero();
+    Bisection(const Polynomial& ,real tol, unsigned long max_iter,
+     real lb, real ub,  mtd M);
 
 
+// compute zero
+    real get_zero() override;
 
-
-    
 };

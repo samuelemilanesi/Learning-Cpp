@@ -64,8 +64,8 @@ Implement a library in order to find a root of a given real  polynomialfunction 
     - Newton method 
     - Bisection-Newton-pooled method (which uses bisection at first, and the result of bisection as input starting point for Newton's method)
 There must be 3 possible stopping condition: 
-    - MAXIT: a maximum number of iteration 
+    - INCREMENTS: absolute value of difference of the function evaluated at two consecutive iterations.
     - RESIDUAL: absolute value of the function evaluated in the point returned by the algorithm (i.e. distance from the zero value we want to find) 
-    - BOTH
+    - BOTH: well... both
 
 
