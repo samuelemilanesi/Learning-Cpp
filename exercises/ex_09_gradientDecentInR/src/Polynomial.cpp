@@ -1,6 +1,6 @@
 #include "Polynomial.hpp"
 
-Polynomial::Polynomial(vector<real>& coeff):
+Polynomial::Polynomial(const vector<real>& coeff):
     coeff(coeff){};
 
 

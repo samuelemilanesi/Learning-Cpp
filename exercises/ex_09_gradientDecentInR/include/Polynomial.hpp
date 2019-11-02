@@ -15,7 +15,7 @@ private:
 
 public:
   
-    Polynomial(vector<real>& coeff);
+    Polynomial(const vector<real>& coeff);
 
 // getters
     real eval(const real x) const;

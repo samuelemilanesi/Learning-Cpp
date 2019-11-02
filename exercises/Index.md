@@ -68,4 +68,8 @@ There must be 3 possible stopping condition:
     - RESIDUAL: absolute value of the function evaluated in the point returned by the algorithm (i.e. distance from the zero value we want to find) 
     - BOTH: well... both
 
+# ex_09: Gradient Descent in R
+Implement a program that given a smooth function and its derivative (e.g. the class Polynomial defined in ex_8), finds the minimum of the function using a gradient descent algorithm with constant learning rate (i.e. descent step)
+ 
+
 
