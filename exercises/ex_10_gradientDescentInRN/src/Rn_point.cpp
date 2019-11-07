@@ -15,10 +15,10 @@ real Rn_point::distance(Rn_point &x) const
 
 real Rn_point::norm_2() const
 {
-    coordinates orig_coords(coord.size(),0.);
+    coordinates orig_coords(coord.size(), 0.);
 
     Rn_point origin(orig_coords);
-    
+
     return distance(origin);
 }
 
@@ -56,9 +56,30 @@ void Rn_point::set_coord_k(size_t k, real val)
 void Rn_point::print() const
 {
     cout << "Point = [";
-    for(auto el: coord){
-        cout<<el<<"; ";
+    for (auto el : coord)
+    {
+        cout << el << "; ";
     }
-    cout<<"\b\b]"<<endl;
+    cout << "\b\b]" << endl;
+}
 
+Rn_point operator*(real c, const Rn_point &p)
+{
+
+    coordinates res_c(p.coord);
+    for (size_t k = 0; k < p.coord.size(); ++k)
+    {
+        res_c[k] *= c;
+    };
+    return res_c;
+}
+Rn_point Rn_point::operator-(const Rn_point &q)
+{
+
+    coordinates coord_q(q.coord);
+    for (size_t k = 0; k < q.coord.size(); ++k)
+    {
+        coord_q[k]= this->coord[k]- coord_q[k];
+    };
+    return coord_q;
 }

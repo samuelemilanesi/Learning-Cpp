@@ -11,8 +11,9 @@ class Rn_point
 {
 private:
     coordinates coord;
-
 public:
+    friend Rn_point operator*(real,const Rn_point&);
+    Rn_point operator-(const Rn_point&);
     Rn_point(coordinates& coord)
             : coord(coord){};
     Rn_point()
@@ -30,3 +31,4 @@ public:
     // setters
     void set_coord_k(size_t k, real val);
 };
+Rn_point operator*(real,const Rn_point&);

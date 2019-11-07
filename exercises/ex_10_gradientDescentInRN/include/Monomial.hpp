@@ -7,6 +7,8 @@ private:
     
 
 public:
-    Monomial();
-    ~Monomial();
+    Monomial(real c, vector<real>& pows);
+    real eval(const Rn_point& p) const;
+    real diff_eval(size_t j, const Rn_point& p) const;
+
 };
