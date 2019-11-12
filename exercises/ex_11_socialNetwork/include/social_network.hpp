@@ -16,8 +16,7 @@ namespace SocialNetworkNS
         std::vector<User> users;
         ///Friends of user[i]
         std::vector<std::vector<size_t>> friends;
-
-
+        
         /**
          * Return the user index in the users vector, users.size() if the
          * user is not found
@@ -26,6 +25,7 @@ namespace SocialNetworkNS
                           const std::string & surname) const;
 
       public:
+
         /**
          * Return the set of users
          */

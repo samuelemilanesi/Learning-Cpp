@@ -70,6 +70,12 @@ There must be 3 possible stopping condition:
 
 # ex_09: Gradient Descent in R
 Implement a program that given a smooth function and its derivative (e.g. the class Polynomial defined in ex_8), finds the minimum of the function using a gradient descent algorithm with constant learning rate (i.e. descent step)
+
+#ex_10: Gradient Descent in Rn 
+*Uncompleted*
+
+#ex_11: Social Network
+Implement a simple social network according to the rules attached in the pdf file 
  
 
 
