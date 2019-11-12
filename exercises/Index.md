@@ -77,5 +77,14 @@ Implement a program that given a smooth function and its derivative (e.g. the cl
 #ex_11: Social Network
 Implement a simple social network according to the rules attached in the pdf file 
  
-
-
+#ex_12: Employees
+A company with three categories of employees (manager, developer and secretary) needs a program to manage the procedure of salary payment.
+Each employee has the following information: name, surname, employee_ID and pay_rate (which is the amount of salary any kind of employee receives per hour). 
+Managers and developers, in addition, have a workshop attendance rate (wsh_rate). Managers have also a mission rate (m_rate). Total work hours (work_hours), mission hours (m_hours) and workshop hours (wsh_hours) are set from employees’ worksheets through a suitable method.
+Every employee is either manager, developer or secretary. Each of these positions provides its specific function to calculate monthly salary: 
+- Managers:
+    ((work_hours - m_hours - wsh_hours) * pay_rate) + (m_hours * m_rate) + (wsh_hours * wsh_rate)
+- Developers:
+    ((work_hours - wsh_hours) * pay_rate) + (wsh_hours * wsh_rate)
+- Secretaries:
+    (work_hours* pay_rate)
