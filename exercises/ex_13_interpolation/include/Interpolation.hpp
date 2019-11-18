@@ -15,7 +15,7 @@ protected:
   std::vector<Point>::const_iterator place_x(const double& x) const;
 
 public:
-  Interpolation(const std::vector<Point> &p)
+  explicit Interpolation(const std::vector<Point> &p)
       : points(p){};
 
   virtual double interpolate(const double x) const = 0;

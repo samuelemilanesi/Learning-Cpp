@@ -4,6 +4,7 @@ double LinearInterpolation::interpolate (const double x) const
 {
     if(check_domain(x))
     {
+
         std::vector<Point>::const_iterator it=place_x(x);
         double x_0( (it-1)->get_x());
         double y_0( (it-1)->get_y());

@@ -18,11 +18,20 @@ main (void)
       Point (5.0, 4.0)
       };
 
-  double x = 2.2;
+  double x = 5;
   
   LinearInterpolation lin_int(points);
-  double res= lin_int.interpolate(x);
-  std::cout<< "Interpolation value y= " << res << std::endl;
+  StepwiseInterpolation step_int(points);
+  NearestNeighborInterpolation near_int(points);
+
+  double lin_res= lin_int.interpolate(x);
+  double step_res= step_int.interpolate(x);
+  double near_res=near_int.interpolate(x);
+
+  std::cout<< "Linear interp y= " << lin_res << std::endl;
+  std::cout<< "Stepwise interp y= " << step_res << std::endl;
+  std::cout<< "Nearest neighbor interp y= " << near_res << std::endl;
+
 
   return 0;
 }

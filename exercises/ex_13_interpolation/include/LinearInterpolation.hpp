@@ -8,10 +8,9 @@ class LinearInterpolation : public Interpolation
 {
 
 public:
-  LinearInterpolation(const std::vector<Point> &p)
+  explicit LinearInterpolation(const std::vector<Point> &p)
       : Interpolation(p){};
 
-  explicit LinearInterpolation(const std::vector<Point> &points);
   double interpolate(const double x) const override;
 };
 
