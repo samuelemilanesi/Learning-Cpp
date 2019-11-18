@@ -1,5 +1,5 @@
 #include <iostream>
 
 int main() {
-    // employees
+    std::cout << "Hello Easy C++ project!" << std::endl;
 }
