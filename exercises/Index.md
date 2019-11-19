@@ -88,3 +88,15 @@ Every employee is either manager, developer or secretary. Each of these position
     ((work_hours - wsh_hours) * pay_rate) + (wsh_hours * wsh_rate)
 - Secretaries:
     (work_hours* pay_rate)
+
+#ex_13: Interpolation
+Develop a library that, given a vector of points, calculates their interpolation in a two dimensional Euclidean space with three different implementation methods:
+
+- Linear interpolation, which connects the points with a straight line.
+- Stepwise interpolation, which provides, within an interval bounded by subsequent points,
+the y value of the left extreme.
+- Nearest-neighbor interpolation, which locates in the vector the nearest point and assigns
+the same value.
+
+#ex_14: Block Matrix
+
