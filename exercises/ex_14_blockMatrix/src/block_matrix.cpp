@@ -49,9 +49,6 @@ double &BlockMatrix::operator()(std::size_t i, std::size_t j)
 
 bool BlockMatrix::is_in_block(size_t i, size_t j, std::vector<Block>::const_iterator it) const
 {
-  bool flag((i >= it->get_top_left_row() && i <= it->get_bottom_right_row()) &&
-         (j >= it->get_top_left_col() && j <= it->get_bottom_right_col()));
-
   return (i >= it->get_top_left_row() && i <= it->get_bottom_right_row()) &&
          (j >= it->get_top_left_col() && j <= it->get_bottom_right_col());
 }
