@@ -15,6 +15,7 @@ private:
 
   DenseMatrix dm;
 
+
 public:
   Block (std::size_t top_left_r, std::size_t top_left_c,
          std::size_t bottom_right_r, std::size_t bottom_right_c,
@@ -27,8 +28,8 @@ public:
   std::size_t get_top_left_row() const;
 
   double & operator () (std::size_t i, std::size_t j);
-
   double operator () (std::size_t i, std::size_t j) const;
+
 };
 
 #endif /* BLOCK_H_ */

@@ -1,21 +1,27 @@
 #ifndef MATRIX_H_
 #define MATRIX_H_
+#include <vector>
+using std::size_t;
 
 class Matrix
 {
-???
-  ??? n_rows;
-  ??? n_cols;
+protected:
+  size_t n_rows;
+  size_t n_cols;
 
 public:
-  Matrix (??? rows, ??? cols);
+  Matrix(size_t rows, size_t cols);
 
-  ??? operator () (std::size_t i, std::size_t j) ???;
+  virtual double &operator()(std::size_t i, std::size_t j) = 0;
+  virtual double operator()(std::size_t i, std::size_t j) const = 0;
 
-  ??? operator () (std::size_t i, std::size_t j) ???;
+  size_t get_n_cols() const;
+  size_t get_n_rows() const;
 
-  ??? get_n_cols() ???
-  ??? get_n_rows() ???
+  void set_n_cols(size_t);
+  void set_n_rows(size_t);
+  
+
 };
 
 #endif /* MATRIX_H_ */
