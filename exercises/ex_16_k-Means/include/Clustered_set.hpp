@@ -1,8 +1,8 @@
 #pragma once
 #include "Point_Rn.hpp"
 #include "Cluster.hpp"
-#include<list>
-using std::list;
+#include<set>
+using std::set;
 
 class Clustered_set {
 private: 

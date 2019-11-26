@@ -22,6 +22,7 @@ public:
     double compute_distance(const Point_Rn&) const; 
     void print() const;
  
-bool operator==(const Point_Rn& rhs);
+bool operator==(const Point_Rn& rhs) const;
+bool operator<(const Point_Rn& rhs) const;
 
 };

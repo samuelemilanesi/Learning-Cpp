@@ -23,7 +23,7 @@ void Clustered_set::clusterize()
                 if (points[j].compute_distance(clusters[k].get_centroid()) <= points[j].compute_distance(clusters[assigned_cluster[j]].get_centroid()))
                 {
                     // removes from old cluster
-                    clusters[assigned_cluster[j]].clustered_points.remove(points[j]);
+                    clusters[assigned_cluster[j]].clustered_points.erase(points[j]);
                     // sets new cluster
                     assigned_cluster[j] = k;
                     // inserts in new the cluster

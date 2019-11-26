@@ -1,7 +1,7 @@
 #pragma once
 #include "Point_Rn.hpp"
-#include <list>
-using std::list;
+#include <set>
+using std::set;
 class Cluster
 {
 private:
@@ -11,7 +11,7 @@ public:
     Cluster(Point_Rn &p)
         : centroid(p){};
 
-    list<Point_Rn> clustered_points;
+    set<Point_Rn> clustered_points={};
     // getters
     Point_Rn &get_centroid() { return centroid; };
 

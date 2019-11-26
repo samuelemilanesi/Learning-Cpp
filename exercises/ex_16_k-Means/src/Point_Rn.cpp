@@ -36,7 +36,7 @@ double Point_Rn::compute_distance(const Point_Rn &p) const
     return sqrt(res);
 }
 
-bool Point_Rn::operator==(const Point_Rn &rhs)
+bool Point_Rn::operator==(const Point_Rn &rhs) const
 {   
   
     for(size_t k=0; k<dimensions;++k)
@@ -47,6 +47,10 @@ bool Point_Rn::operator==(const Point_Rn &rhs)
     return true;
 }
 
+bool Point_Rn::operator<(const Point_Rn& rhs) const
+{
+    return coordinates[0]<rhs.get_coord_k(0);
+}
 
 void Point_Rn::print() const
 {
@@ -57,3 +61,5 @@ void Point_Rn::print() const
     }
     std::cout<<"\b\b)";
 }
+
+
