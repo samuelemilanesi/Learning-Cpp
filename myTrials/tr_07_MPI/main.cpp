@@ -11,3 +11,6 @@ int main (int argc, char* argv[])
     MPI_Finalize();
 
 }
+
+// to compile: mpicxx -o exe mail.cpp
+// to run: mpiexec -np 5 exe // where 5 is the number of processes
