@@ -6,7 +6,7 @@ using std::vector;
 
 class Point_Rn {
 protected: 
-    double dimensions;
+    int dimensions;
     vector<double> coordinates;
 
 public:
