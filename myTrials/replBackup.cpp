@@ -37,6 +37,15 @@ void int_vector_print(vector<int>& v)
 	}
 }
 
+
+vector<int>& vectorize_triplete(int a, int b, int c)
+{
+// NON E` UNA BUONA IDEA CREARE CON NEW E RESITUTIRE LA REFERENCE
+	vector<int>* result = new vector<int>({a,b,c});
+	cout<< "triplete address: " << result<<endl;
+	return *result;
+}
+
 /*=========================================================*/
 
 
@@ -47,7 +56,7 @@ void int_vector_print(vector<int>& v)
 
 int main() 
 {
-// /* having fun with pointers
+/* having fun with pointers
 
 int x(190);
 int* ptr(&x); // ptr punta alla variabile x
@@ -72,10 +81,27 @@ cout<<"x allocato in: "<< &x<< ";\t\t\tx= "<<x<<endl;
 cout<<"ptr punta a: " << ptr<<";\t\t\t*ptr= "<<*ptr<<endl;
 cout<<"ptr2 punta a: " << ptr2<<";\t\t\t *ptr2= "<<*ptr2<<endl;
 
-// \end having fun with pointers */
+// end having fun with pointers */
+
+
+/* having fun with return references dynamically allocated
+
+int a=1; int b=2; int c=3;
+
+vector<int>& v(vectorize_triplete(a, b, c));
+
+cout<< "vector v address: " << &v <<endl;
+int_vector_print(v);
+delete &v;
+
+// end having fun with return reference dynamically allcated */
+
 
 
 };
+
+
+
 
 
 
