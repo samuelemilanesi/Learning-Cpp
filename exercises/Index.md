@@ -89,7 +89,7 @@ Every employee is either manager, developer or secretary. Each of these position
 - Secretaries:
     (work_hours* pay_rate)
 
-#ex_13: Interpolation
+# ex_13: Interpolation
 Develop a library that, given a vector of points, calculates their interpolation in a two dimensional Euclidean space with three different implementation methods:
 
 - Linear interpolation, which connects the points with a straight line.
@@ -98,5 +98,25 @@ the y value of the left extreme.
 - Nearest-neighbor interpolation, which locates in the vector the nearest point and assigns
 the same value.
 
-#ex_14: Block Matrix
-
+# ex_14: Block Matrix
+ 
+---
+# ex_21: supermarket
+A well known supermarket chain, BZR, tasked you with the implementation of a piece of
+software for the management of queues at counters in their stores. After an environmentally
+responsible choice, BZR will install card readers at each counter, hence customers will not
+pick a number from the usual paper roll, but they will virtually enter a line via scanning their
+fidelity card.
+The existing store management software represents customer’s identifiers with strings. Your
+class has to provide three main methods:
+1. the first method takes an ID as argument and adds the corresponding customer in line
+2. the second method returns the ID of the next client to be served
+3. the third method checks whether there is any client who is waiting.
+Beware that customers must not be allowed to reserve more than one position in the queue
+and the system is expected to notify such failures to get in line. Your contract requires
+methods to be optimized for the average case.
+In addition, state the complexity of all the implemented methods, both in the average and
+worst case, with a particular focus on the design choices you made with respect to data
+structures and algorithms.
+At last, discuss at high level how you would change the project if BZR wanted to give
+precedence to premium clients and how this would affect the computational complexity.
