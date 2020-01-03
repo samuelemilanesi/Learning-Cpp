@@ -47,12 +47,12 @@ class StepCounter: public Counter{
 		{
 			cout<< "I4" << endl;
 		}
-		~StepCounter()
+		~StepCounter() override
 		{
 			delete step;
 			cout << "D2" << endl;
 		}
-		void incr()  
+		void incr() override
 		{
 			*count += *step;
 		}
@@ -112,5 +112,12 @@ int main()
 
   // Output: I1 I2 c1=2 D1 \n I1 I3 c2=1  D2 D1 \n I1 I3 I4 c3=-4 D2 D1 \n
 	
+
+
+/*
+Togliendo gli i `virtual` e gli `override` avremmo che tutti i polimorfismi sono risolti chiamando le funzioni del type con cui sono stati dichiarati (quindi le funzioni della classe madre). Questo comporta che:
+  - c3 chiama la funzione incr() della classe madre due volte stampando quindi c3=2
+  - c3 chiama il distruttore della classe madre non stampando D2 e causando un memory leak per la variabile step allocata sulla heap e non più raggiungibile
+*/
 	return 0;
 }
